@@ -14,9 +14,7 @@ import br.edu.ifspsaocarlos.agendafirebase.model.Contato;
 import br.edu.ifspsaocarlos.agendafirebase.R;
 
 
-
-
-public class ContatoAdapter extends FirebaseRecyclerAdapter<Contato,ContatoAdapter.ContatoViewHolder> {
+public class ContatoAdapter extends FirebaseRecyclerAdapter<Contato, ContatoAdapter.ContatoViewHolder> {
 
     private static ItemClickListener clickListener;
 
@@ -40,15 +38,10 @@ public class ContatoAdapter extends FirebaseRecyclerAdapter<Contato,ContatoAdapt
     }
 
 
-
-
     @Override
     protected void onBindViewHolder(ContatoViewHolder holder, int position, Contato model) {
         holder.nome.setText(model.getNome());
     }
-
-
-
 
 
     public void setClickListener(ItemClickListener itemClickListener) {
@@ -56,12 +49,12 @@ public class ContatoAdapter extends FirebaseRecyclerAdapter<Contato,ContatoAdapt
     }
 
 
-    public  class ContatoViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class ContatoViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         final TextView nome;
 
         ContatoViewHolder(View view) {
             super(view);
-            nome = (TextView)view.findViewById(R.id.nome);
+            nome = (TextView) view.findViewById(R.id.nome);
             view.setOnClickListener(this);
         }
 

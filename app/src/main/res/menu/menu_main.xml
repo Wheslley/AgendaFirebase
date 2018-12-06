@@ -1,12 +1,39 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" tools:context="br.edu.ifspsaocarlos.agendafirebase.activity.MainActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="br.edu.ifspsaocarlos.agendafirebase.activity.MainActivity">
     <item
         android:id="@+id/pesqContato"
-        app:showAsAction="ifRoom"
         android:title="@string/nome_do_contato"
         app:actionViewClass="android.support.v7.widget.SearchView"
-        />
-
- </menu>
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/Ordenar"
+        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:title="Ordenar"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_all"
+                android:title="@string/menuAll"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_friends"
+                android:title="@string/menuFriend"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_family"
+                android:title="@string/menuFamily"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_job"
+                android:title="@string/menuJob"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/menu_others"
+                android:title="@string/menuOthers"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>
 

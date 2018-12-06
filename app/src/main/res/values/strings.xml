@@ -13,6 +13,12 @@
     <string name="contato_adicionado">Contato adicionado</string>
     <string name="contato_alterado">Informações do contato alteradas</string>
     <string name="contato_apagado">Contato removido</string>
+    <string name="tipo_de_contato">Tipo de contato</string>
+    <string name="menuAll">All</string>
+    <string name="menuFriend">Friend</string>
+    <string name="menuFamily">Family</string>
+    <string name="menuJob">Job</string>
+    <string name="menuOthers">Others</string>
 </resources>
 
 
